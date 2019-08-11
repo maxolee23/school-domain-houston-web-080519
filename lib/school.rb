@@ -1,18 +1,18 @@
 # code here!
-class School 
+class School
   def initialize(name, roster)
     @name = name
     @roster = {}
-  end 
+  end
 
   def roster
     @roster
-  end 
+  end
 
   def add_student(name, grade)
-    if roster[grade] != nil 
+    if roster[grade] != nil
       @roster[grade] << name
-    else 
+    else
       @roster[grade] = [name]
     end
   end
@@ -21,9 +21,9 @@ class School
     @roster[grade]
   end
 
-  def sort 
+  def sort
     @roster.each do |key, value|
-      value.sort  
-    end 
+      value.sort
+    end
   end
 end
